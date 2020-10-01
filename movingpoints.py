@@ -2,7 +2,7 @@ import random
 import time
 import os
 
-class Point:
+class Point: 
     def __init__(self, x, y):
         self.x = x
         self.y = y
@@ -164,7 +164,7 @@ class View:
     def find(self, symbol):
         found_by_symbol = self.find_all(symbol)
         if len(found_by_symbol) == 0:
-            return None
+            return ' '
         else:
             return random.choice(found_by_symbol)
 
